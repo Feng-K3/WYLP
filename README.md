@@ -31,7 +31,7 @@ let header = function () {
 
 ### 主页logo
 
-![image-20210224215142263](F:\前锋web前端培训\SZ-GP-5第二阶段练习\gitTest\project_instruction_images\1.png)
+https://github.com/Feng-K3/WYLP/blob/master/project_instruction_images/1.png
 
 点击回到主页
 
