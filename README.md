@@ -31,7 +31,7 @@ let header = function () {
 
 ### 主页logo
 
-https://github.com/Feng-K3/WYLP/blob/master/project_instruction_images/1.png
+https://github.com/Feng-K3/WYLP/blob/master/image/1.png
 
 点击回到主页
 
