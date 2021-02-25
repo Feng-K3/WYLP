@@ -1,0 +1,211 @@
+.box_footer{
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 67px);
+    flex-direction: column;
+}
+
+.loginNav {
+    padding-top: 16px;
+    border-bottom: 3px solid #e5e5e5;
+    display: flex;
+    flex-grow: 0;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.loginNav > div {
+    font-weight: 600;
+    padding: 16px 34px;
+    font-size: 16px;
+    color: #585858;
+    line-height: 22px;
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.loginNav > div:hover {
+    color: #000;
+    border-bottom: 3px solid #000;
+    margin-bottom: -3px;
+}
+
+.loginNav_show {
+    color: #000;
+    border-bottom: 3px solid #000;
+    margin-bottom: -3px;
+}
+
+/*表单验证登录*/
+.login {
+    margin: 45px auto;
+    width: 421px;
+    position: relative;
+    display: none;
+}
+
+.login input {
+    padding: 8px 7px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.login button {
+    user-select: none;
+    cursor: pointer;
+}
+
+.phone, .verificationCode {
+    /*text-align: center;*/
+    margin-bottom: 15px;
+}
+
+.verificationCode .registerImg{
+    width: 107px;
+    height: 34px;
+    float: right;
+}
+
+.phone > span, .verificationCode > span {
+    font-size: 14px;
+    margin-right: 48px;
+}
+
+.verificationCode > button {
+    width: 107px;
+    padding: 8px 0;
+    margin-left: 3px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+}
+
+.password{
+    margin-left: 14px;
+}
+
+.forgotPassword{
+    font-size: 14px;
+    line-height: 20px;
+    color: #60b3fa;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.forgotPassword>span{
+    cursor: pointer;
+}
+
+.ipt ,#iptPhone,.password,.registerPhone,.newPass,.confirmPass{
+    width: 315px;
+}
+
+.yz, #yz,.registerYZ {
+    width: 200px;
+}
+.newPassWord,.confirmPassword,.birthday,.sex,.haveRead{
+    padding-bottom: 15px;
+}
+.newPass,.confirmPass,.birthday>input{
+    float: right;
+}
+.newPassWord>span,.confirmPassword>span,.birthday>span{
+    font-size: 14px;
+    line-height: 34px;
+}
+.sex>label:nth-of-type(1){
+    margin-left: 58px;
+}
+.haveRead{
+    cursor: pointer;
+}
+.button {
+    display: flex;
+    flex-grow: 0;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.passwordButton{
+    display: flex;
+    flex-grow: 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.go, .back {
+    width: 180px;
+    padding: 10px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+}
+
+.back {
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.back:hover {
+    background-color: black;
+    color: white;
+}
+
+.right {
+    width: 300px;
+    position: absolute;
+    right: -315px;
+    text-align: center;
+    margin-top: -24px;
+}
+
+.tips1, .tips2 ,.tips3 ,.tips4 {
+    float: left;
+    font-size: 12px;
+    color: crimson;
+    display: none;
+}
+
+.login_mask {
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    left: 50%;
+    margin-left: -400px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    display: none;
+}
+
+.login_mask > .login_img {
+    width: 225px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 0;
+}
+
+.login_mask > span {
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.login_mask > .right > span {
+    margin-top: 4px;
+    margin-left: -230px;
+}
+
+.login_mask .close {
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login_mask .close:hover {
+    color: crimson;
+}

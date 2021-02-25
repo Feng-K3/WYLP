@@ -1,0 +1,179 @@
+#Cartit {
+    user-select: none;
+  height: 20px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 7px 0; }
+  #Cartit span {
+    float: left; }
+  #Cartit span:nth-of-type(1) {
+    cursor: pointer;
+    margin-right: 150px; }
+  #Cartit span:nth-of-type(2) {
+    margin-right: 160px; }
+  #Cartit span:nth-of-type(3) {
+    margin-right: 150px; }
+  #Cartit span:nth-of-type(4) {
+    margin-left: -40px;
+    margin-right: 105px; }
+  #Cartit span:nth-of-type(5) {
+    margin-right: 60px; }
+  #Cartit span:nth-of-type(6) {
+    margin-left: 68px; }
+  #Cartit .check {
+    float: left;
+    margin: 3px 20px 0;
+    width: 16px;
+    height: 16px; }
+
+#Shopping {
+  margin-top: 20px;
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
+  border: 1px solid #eeeeee; }
+  #Shopping .title {
+    padding: 6px 8px;
+    background: #eeeeee; }
+  #Shopping .view {
+    padding: 7px 10px;
+    height: 24px;
+    border-bottom: 1px solid #eeeeee; }
+    #Shopping .view span {
+      padding: 5px 7px 4px 4px;
+      font-size: 12px;
+      border: 1px solid #333333;
+      border-radius: 5px; }
+  #Shopping .product {
+    position: relative;
+    overflow: hidden; }
+    #Shopping .product .list {
+      height: 119px;
+      padding-bottom: 52px;
+      overflow: hidden;
+      padding-top: 20px; }
+      #Shopping .product .list .checkIpt {
+        width: 35px;
+        height: 35px;
+        margin: 0px 0 0 20px;
+        float: left;
+        cursor: pointer; }
+      #Shopping .product .list img {
+        float: left;
+        width: 110px;
+        height: 110px;
+        margin: 0 8px;
+        cursor: pointer; }
+      #Shopping .product .list .info {
+        width: 167px;
+        float: left;
+        color: #333333;
+        font-size: 14px;
+        cursor: pointer; }
+      #Shopping .product .list .attribute {
+        width: 225px;
+        padding: 6px 8px;
+        float: left;
+        border: 1px solid #999999;
+        height: 86px;
+        color: #999999;
+        font-size: 14px;
+        cursor: pointer; }
+      #Shopping .product .list .price {
+        width: 90px;
+        height: 20px;
+        float: left;
+        margin-left: 70px;
+        cursor: pointer; }
+        #Shopping .product .list .price .old {
+          color: #999999;
+          text-decoration: line-through;
+          font-size: 14px; }
+      #Shopping .product .list .number {
+        user-select: none;
+        overflow: hidden;
+        width: 122px;
+        cursor: pointer;
+        float: left;
+        margin-left: 20px;
+        text-align: center; }
+        #Shopping .product .list .number .ipt {
+          width: 38px;
+          height: 20px;
+          padding: 4px 1px;
+          margin: 0 10px;
+          float: left;
+          text-align: center;
+          border: 1px solid #333333; }
+        #Shopping .product .list .number span {
+          width: 28px;
+          height: 20px;
+          display: block;
+          float: left;
+          border: 1px solid #eeeeee;
+          padding: 4px 0; }
+      #Shopping .product .list .money {
+        float: left;
+        cursor: pointer;
+        margin-left: 60px; }
+        #Shopping .product .list .money span {
+          color: #7f0019; }
+      #Shopping .product .list .delete {
+        user-select: none;
+        float: left;
+        margin-left: 120px;
+        cursor: pointer; }
+
+#add {
+  margin-top: auto;
+  background: #eeeeee;
+  height: 20px;
+  padding: 20px 0;
+  overflow: hidden; }
+  #add .left {
+    float: left; }
+    #add .left .check {
+      margin-left: 10px; }
+    #add .left span {
+      user-select: none;
+      cursor: pointer;
+      margin-left: 10px; }
+  #add .right {
+    float: right;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+    top: -10px; }
+    #add .right .num {
+      margin-right: 10px; }
+      #add .right .num i {
+        color: #7f0019; }
+    #add .right .sum {
+      margin-right: 10px; }
+      #add .right .sum i {
+        color: #7f0019;
+        font-size: 20px; }
+    #add .right a {
+      display: inline-block;
+      padding: 10px 31px;
+      margin: 0 10px 0 25px;
+      background: #333333;
+      color: white; }
+    .Shopping_show{
+      text-align: center;
+      line-height: 21.5vh;
+      display: none;
+    }
+    .Shopping_show>span{
+      user-select: none;
+    }
+    .product_show{
+      width: 135px;
+      height: 40px;
+      top: 15px;
+      left: 770px;
+      /*display: none;*/
+      /*background-color: teal;*/
+      position: absolute;
+    }

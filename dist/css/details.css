@@ -1,0 +1,229 @@
+#details {
+  overflow: hidden;
+  margin-top: 30px; }
+  #details .Img {
+    width: 520px;
+    height: 614px;
+    float: left; }
+    #details .Img .img {
+      width: 520px;
+      height: 520px;
+      border: 1px solid #eeeeee;
+      text-align: center;
+      position: relative;
+      overflow: hidden; }
+      #details .Img .img .detail_img {
+        width: 518px;
+        height: 518px;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        left: 1px;
+        display: block; }
+      #details .Img .img:hover .detail_img {
+        display: none; }
+      #details .Img .img .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 255, 0.3);
+        display: none;
+        z-index: 15; }
+      #details .Img .img:hover .mask {
+        display: inline-block; }
+      #details .Img .img .details_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none; }
+      #details .Img .img:hover .details_img {
+        display: block; }
+    #details .Img .detail_box {
+      margin-top: 13.7px;
+      width: 520px;
+      height: 85px;
+      overflow: hidden; }
+      #details .Img .detail_box .prev, #details .Img .detail_box .next {
+        width: 36px;
+        height: 80px; }
+      #details .Img .detail_box .prev {
+        float: left;
+        background: url("../image/shopList/left.png") 50% 50% no-repeat; }
+      #details .Img .detail_box .next {
+        float: right;
+        background: url("../image/shopList/right.png") 50% 50% no-repeat; }
+      #details .Img .detail_box .detail_box_content {
+        float: left;
+        width: 448px;
+        height: 82px;
+        box-sizing: border-box;
+        overflow: hidden; }
+        #details .Img .detail_box .detail_box_content > div {
+          min-width: 746px;
+          position: relative; }
+          #details .Img .detail_box .detail_box_content > div img {
+            float: left;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px; }
+            #details .Img .detail_box .detail_box_content > div img:hover {
+              border: 1px solid #7f0019; }
+          #details .Img .detail_box .detail_box_content > div img:first-child {
+            border: 1px solid #7f0019; }
+          #details .Img .detail_box .detail_box_content > div img:last-child {
+            margin-right: -15px; }
+  #details .introduce {
+    float: right;
+    width: 644px;
+    height: 644px; }
+    #details .introduce .title {
+      font-size: 20px;
+      color: #000000;
+      font-weight: bold;
+      margin: 0 0 10px 14px; }
+    #details .introduce .price {
+      margin-left: 14px;
+      height: 32px; }
+      #details .introduce .price .page {
+        font-size: 14px; }
+      #details .introduce .price .new {
+        font-size: 20px;
+        color: #7f0019; }
+      #details .introduce .price .old {
+        font-size: 14px;
+        text-decoration: line-through; }
+    #details .introduce .all {
+      padding: 7.5px;
+      background: #eeeeee;
+      position: relative;
+      cursor: pointer;
+      transition: .6s; }
+      #details .introduce .all .all_title {
+        margin-left: 10px; }
+      #details .introduce .all .inner {
+        width: 480px;
+        display: inline-block;
+        margin-left: 50px; }
+      #details .introduce .all .sale {
+        width: 644px;
+        padding: 7px 0 7px 94px;
+        cursor: pointer;
+        position: absolute;
+        top: 33px;
+        left: 0;
+        background: white;
+        border: 1px solid #eeeeee;
+        z-index: 10;
+        display: none; }
+        #details .introduce .all .sale li {
+          list-style-type: disc; }
+          #details .introduce .all .sale li a {
+            color: #585858; }
+      #details .introduce .all:hover .sale {
+        display: block; }
+    #details .introduce .Size {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eeeeee; }
+      #details .introduce .Size .size {
+        margin-top: 20px; }
+        #details .introduce .Size .size .size_title {
+          width: 80px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          line-height: 30px; }
+        #details .introduce .Size .size ul {
+          overflow: hidden; }
+          #details .introduce .Size .size ul li {
+            float: left; }
+            #details .introduce .Size .size ul li a {
+              color: #333333;
+              padding: 4px 8px;
+              display: block;
+              border: 1px solid #333333;
+              margin-right: 15px; }
+      #details .introduce .Size .color {
+        margin-top: 20px; }
+        #details .introduce .Size .color .size_title {
+          width: 80px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          line-height: 30px; }
+        #details .introduce .Size .color ul {
+          overflow: hidden; }
+          #details .introduce .Size .color ul li {
+            float: left; }
+            #details .introduce .Size .color ul li a {
+              color: #333333;
+              padding: 4px 8px;
+              display: block;
+              border: 1px solid #333333;
+              margin-right: 15px; }
+    #details .introduce .mode {
+      margin-top: 20px; }
+      #details .introduce .mode .size_title {
+        width: 80px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        line-height: 30px; }
+      #details .introduce .mode ul {
+        overflow: hidden; }
+        #details .introduce .mode ul li {
+          float: left; }
+          #details .introduce .mode ul li a {
+            color: #333333;
+            padding: 4px 8px;
+            display: block;
+            border: 1px solid #333333;
+            margin-right: 15px;
+            margin-left: 10px; }
+    #details .introduce .number {
+      margin-top: 20px;
+      overflow: hidden; }
+      #details .introduce .number .size_title {
+        width: 80px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        line-height: 30px; }
+      #details .introduce .number .right span {
+        float: left;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #eeeeee;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer; }
+        #details .introduce .number .right span:hover {
+          background: #eeeeee; }
+      #details .introduce .number .right .ipt {
+        float: left;
+        border: 1px solid #333333;
+        width: 42px;
+        height: 30px;
+        margin: 0 10px;
+        text-align: center; }
+      #details .introduce .number .right i {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px; }
+    #details .introduce .btn {
+      margin-top: 30px; }
+      #details .introduce .btn a {
+        float: left;
+        padding: 15px 48px 12px;
+        border: 1px solid #333333;
+        margin-right: 10px;
+        color: #333333;
+        font-size: 20px; }
+      #details .introduce .btn .active {
+        background: black;
+        color: white; }
+
+/*# sourceMappingURL=details.css.map */

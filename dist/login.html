@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" type="img/x-icon" href="./image/home/favicon.ico">
+    <link rel="stylesheet" href="./css/cssLayout.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<!--头部加载-->
+<header class="header"></header>
+
+<div class="box_footer">
+    <div class="container">
+        <div class="loginNav">
+            <div class="loginNav_show">验证码登录</div>
+            <div>密码登录</div>
+            <div>注册</div>
+        </div>
+        <div class="loginNavBar">
+            <div style="display: block" class="login">
+            <div class="login_mask">
+                <img class="login_img" src="" alt="由于接口id每天更换，所以如果没有出现图片请联系我">
+                <p class="close">X</p>
+                <span>请输入验证码</span><input type="text" placeholder="请输入手机短信验证码" id="yz">
+                <div class="right">
+                    <span class="tips2">验证码错误</span>
+                </div>
+            </div>
+            <div class="phone">
+                <span>手机号</span><input type="tel" placeholder="请输入手机号码" class="ipt">
+                <div class="right">
+                    <span class="tips1">该号码不属于国内</span>
+                </div>
+            </div>
+            <div class="verificationCode">
+                <span>验证码</span><input type="text" placeholder="请输入手机短信验证码" class="yz">
+                <button class="sendYz">发送验证码</button>
+                <div class="right">
+                    <span class="tips2">验证码错误</span>
+                </div>
+            </div>
+            <div class="button">
+                <button class="go" id="go">登录</button>
+                <button class="back">返回</button>
+            </div>
+        </div>
+            <div class="login">
+                <div class="phone">
+                    <span>手机号</span><input type="tel" placeholder="请输入手机号码" id="iptPhone">
+                    <div class="right">
+                        <span class="tips1">该号码不属于国内</span>
+                    </div>
+                </div>
+                <div class="verificationCode">
+                    <span>密码</span><input type="text" placeholder="请输入6-20位英文、数字组成的密码" class="password">
+                    <div class="right">
+                        <span class="tips2">密码有误</span>
+                    </div>
+                </div>
+                <div class="forgotPassword">
+                    <span>忘记密码？</span>
+                </div>
+                <div class="passwordButton">
+                    <button class="go" id="pass_Go">登录</button>
+                    <button class="back">返回</button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="phone">
+                    <span>手机号</span><input type="tel" placeholder="请输入手机号码" class="registerPhone">
+                    <div class="right">
+                        <span class="tips1">手机号只能是11位</span>
+                    </div>
+                </div>
+                <div class="verificationCode">
+                    <span>验证码</span><input type="text" placeholder="请输入手机短信验证码" class="registerYZ">
+                    <button class="registerSendYz">发送验证码</button>
+                    <div class="right">
+                        <span class="tips2">验证码错误</span>
+                    </div>
+                </div>
+                <div class="newPassWord clearfix">
+                    <span>新密码</span><input type="text" placeholder="请输入6-20位英文、数字组合密码" class="newPass">
+                    <div class="right">
+                        <span class="tips3">只能是英文和数字组成</span>
+                    </div>
+                </div>
+                <div class="confirmPassword clearfix">
+                    <span>确认密码</span><input type="text" placeholder="请再一次确认新密码" class="confirmPass">
+                    <div class="right">
+                        <span class="tips4">密码输入有误</span>
+                    </div>
+                </div>
+                <div class="birthday">
+                    <span>生日</span>
+                    <input type="datetime-local" class="birthdayIpt">
+                </div>
+                <div class="sex">
+                    <span>性别</span>
+                    <label for="man">
+                        <input type="radio" name="man" id="man"> 男
+                    </label>
+                    <label for="woman">
+                        <input type="radio" name="man" id="woman"> 女
+                    </label>
+                </div>
+                <div class="haveRead">
+                    <label for="haveRead">
+                        <input type="radio" name="man" id="haveRead">
+                    </label>
+                    <span>我已阅读并同意<span style="color: #60b3fa">《服务协议与隐私政策》</span></span>
+                </div>
+                <div class="passwordButton">
+                    <button class="go" id="register">注册</button>
+                    <button class="back">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!--ajax数据渲染-->
+    </footer>
+</div>
+
+<!--模块化加载js-->
+<script src="./js/lib/require.2.1.9.js" data-main="./js/main"></script>
+</body>
+</html>

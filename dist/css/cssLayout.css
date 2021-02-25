@@ -1,0 +1,98 @@
+@charset "utf-8"; /*只要css文件中有一个中文就写这句话*/
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, img, span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    user-select: text; /*控制用户能否选中文本*/
+    font-family: '微软雅黑';
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+i, em {
+    font-style: normal;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+img {
+    user-select: none;
+    border: 0; /*是为了解决低版本浏览器的div嵌套图片时的边框bug*/
+    /*display:block;!* 图片居中显示，是为了解决图片与div的间隙兼容bug *!*/
+    /*background-image: url(),url();
+    background-repeat: no-repeat,no-repeat;		//多种背景图的组合写法
+    background-position: left center,right center;
+    transform: translate(x,y);					偏移量 */
+}
+
+input, fieldset {
+    user-select: none;
+    /*outline: none; !*input提示边框取消*!*/
+    border: 0;
+}
+
+textarea {
+    resize: none; /*隐藏可拖拽框*/
+    overflow-x: hidden; /*隐藏横向滚动条*/
+    border: none; /*边框不可见*/
+    outline: none;
+}
+
+/*解决高度塌陷万能方法	用时直接在父类的class加上clearfix*/
+.clearfix::after {
+    content: '.';
+    clear: both;
+    width: 100%;
+    height: 0; /*解决低版本兼容*/
+    overflow: hidden;
+    display: block;
+    visibility: hidden; /*可见度设为隐藏,仍然占据空间*/
+    font-size: 0; /*字体大小为0，解决低版本的高度bug*/
+}
+
+.clearfix {
+    zoom: 1; /* 兼容低版本浏览器 */
+    /*(IE)Trident 				-ms-
+    (火狐)Gecko  				-moz-
+    (谷歌/欧朋)Blink				-o-
+    (苹果/谷歌旧版本)Webkit 		-webkit-
+        -webkit-user-select: none
+        设置为无法选择文本
+     -webkit-text-size-adjust
+     禁用Webkit内核浏览器的文字大小调整功能
+     -webkit-touch-callout: none
+     长按时不触发系统的菜单, 可用在图片上加这个属性禁止下载图片
+     -webkit-nbsp-mode
+     它让你可以改变&nbsp;空白符的行为，强制文字在它被用到的地方断行。通过设置值为space即可实现
+      */
+}
+
+/*解决基线对齐问题	直接在当前类的class加上baseline*/
+.baseline {
+    width: 0;
+    height: 100%;
+    /*转为行内块，解决基线对齐问题*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

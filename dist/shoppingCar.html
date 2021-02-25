@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="icon" type="img/x-icon" href="./image/home/favicon.ico">
+    <link rel="stylesheet" href="./css/cssLayout.css">
+    <link rel="stylesheet" href="./css/shoppingCat.css">
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="container" id="Cartit">
+        <label for="all1">
+            <input type="checkbox" checked class="check" id="all1">
+            <span>全选</span>
+        </label >
+        <span>商品信息</span>
+        <span>商品属性</span>
+        <span>单价</span>
+        <span>数量</span>
+        <span>金额</span>
+        <span>操作</span>
+    </div>
+
+    <div class="container" id="Shopping">
+        <div class="title">
+            快递寄送
+        </div>
+        <div class="view">
+            <span> 大件满￥100包邮  小件满￥100包邮 </span>
+        </div>
+        <div class="Shopping_wrap">
+            <!--数据渲染-->
+        </div>
+        <div class="Shopping_show">
+            <span>——购物车中暂无商品——</span>
+        </div>
+    </div>
+
+    <div class="container" id="add">
+        <div class="left">
+            <label for="all2">
+            <input type="checkbox" checked class="check" id="all2">
+            <span>全选</span>
+            </label>
+            <span id="shoppingCar_del">删除</span>
+            <span>清理失效商品</span>
+            <span>移入收藏夹</span>
+        </div>
+        <div class="right">
+            <span class="num">已选商品 <i>0</i> 件</span>
+            <span class="sum">优惠合计(不含运费)<i>￥0</i></span>
+            <a href="#">结算</a>
+        </div>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="./js/lib/require.2.1.9.js" data-main="./js/main"></script>
+</body>
+</html>
